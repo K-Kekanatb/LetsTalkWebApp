@@ -14,7 +14,7 @@
     <body>
         <h1>Session Started</h1>
         <%
-            String computerName = pageContext.getServletContext().getInitParameter("computer_name");
+            String computerName = pageContext.getServletContext().getInitParameter("computerName");
             String userName = (String)session.getAttribute("name");
         %>
         <p>
@@ -32,7 +32,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>What's your gender?</td>
+                    <td></td>
                     <td>
                         <input type="submit" value="SUBMIT" />
                     </td>

@@ -3,10 +3,23 @@
     <servlet>
         <servlet-name>StartSessionServlet</servlet-name>
         <servlet-class>za.ac.tut.controller.StartSessionServlet</servlet-class>
+        <init-param>
+            <description>Computer name</description>
+            <param-name>computerName</param-name>
+            <param-value>Siri</param-value>
+        </init-param>
     </servlet>
     <servlet>
         <servlet-name>GenderServlet</servlet-name>
         <servlet-class>za.ac.tut.controller.GenderServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TeamSupportedServlet</servlet-name>
+        <servlet-class>za.ac.tut.controller.TeamSupportedServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EndSessionServlet</servlet-name>
+        <servlet-class>za.ac.tut.controller.EndSessionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>StartSessionServlet</servlet-name>
@@ -15,6 +28,14 @@
     <servlet-mapping>
         <servlet-name>GenderServlet</servlet-name>
         <url-pattern>/GenderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeamSupportedServlet</servlet-name>
+        <url-pattern>/TeamSupportedServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EndSessionServlet</servlet-name>
+        <url-pattern>/EndSessionServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
