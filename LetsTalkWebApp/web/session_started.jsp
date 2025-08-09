@@ -14,7 +14,7 @@
     <body>
         <h1>Session Started</h1>
         <%
-            String computerName = pageContext.getServletContext().getInitParameter("computerName");
+            String computerName = application.getInitParameter("computerName");
             String userName = (String)session.getAttribute("name");
         %>
         <p>
