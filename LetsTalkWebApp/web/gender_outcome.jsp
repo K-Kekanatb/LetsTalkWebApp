@@ -26,7 +26,7 @@
                     <td>Which team do you support?</td>
                     <td>
                         <select name="ts" required="">
-                            <option value="chief">Chiefs</option>
+                            <option value="chiefs">Chiefs</option>
                             <option value="others">Others</option>
                         </select>
                     </td>

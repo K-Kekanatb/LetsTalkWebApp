@@ -17,7 +17,7 @@
             String name = (String)session.getAttribute("name");
             String title = (String)session.getAttribute("title");
             String comment = (String)session.getAttribute("com");
-            String computerName = pageContext.getServletContext().getInitParameter("computer_name");
+            String computerName = application.getInitParameter("computerName");
         %>
         <p>
             <b><%=title%></b> <b><%=name%></b>, <b><%=computerName%></b> says <b><%=comment%></b>
